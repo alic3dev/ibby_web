@@ -1,0 +1,22 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: center;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1vw;
+  word-break: break-all;
+
+  color: aliceblue;
+
+  user-select: none;
+
+  z-index: -1;
+}

@@ -1,0 +1,18 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  padding-right: 1rem;
+
+  background: #121212;
+
+  /* font-size: ; */
+}
+
+.item {
+}
