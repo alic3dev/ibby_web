@@ -1,0 +1,14 @@
+.login {
+  max-width: 600px;
+
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.message {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,66 @@
+.messages {
+  width: 700px;
+  max-width: 98%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.get {
+  margin: auto;
+}
+
+.meta {
+  font-family: 'Courier New', Courier, monospace;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.message {
+  padding: 0.5rem;
+
+  background: #121212;
+
+  border-radius: 5px;
+}
+
+/*
+
+  Dark Room
+
+  History -> Freedom -> Eternity
+  
+  25%: The passage of time.
+  75%: The journey of the future.
+
+  Chapter 7: The final hour
+  Chapter 2 (Page: 27)
+
+  Author: Arthur F. Horn
+  Publisher: The GW Publishing Inc.
+
+  Copyright Year: 2145
+
+  Black Box
+
+  "You found the end"
+
+*/
+
+/*
+
+  White Room
+
+  Boarded up windows
+
+  9:26
+
+  "Find Me"
+
+  Write: "No"
+         Inverted Pentagram with a flower stem through it
+         The cult of Asatanas
+
+*/
