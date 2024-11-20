@@ -6,19 +6,35 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "script": "ts-node ./scripts/run.ts"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.14"
+    "@types/ssh2": "^1.15.1",
+    "@upstash/ratelimit": "^1.2.1",
+    "@vercel/kv": "^1.0.1",
+    "@vercel/postgres-kysely": "^0.7.2",
+    "dotenv": "^16.4.5",
+    "kysely": "^0.27.4",
+    "module-alias": "^2.2.3",
+    "next": "14.2.14",
+    "openpgp": "^6.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "seedrandom": "^3.0.5",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.14"
-  }
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^20.17.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/seedrandom": "^3.0.8",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.14",
+    "ssh2": "^1.16.0",
+    "turbo": "^2.3.0",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
 }
