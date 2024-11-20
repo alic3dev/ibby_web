@@ -1,19 +1,21 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 html,
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   max-width: 100vw;
+  min-height: 100vh;
+
   overflow-x: hidden;
+
+  font-size: 12px;
 }
 
 body {
@@ -33,6 +35,54 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+input,
+button {
+  margin: 0.25rem 0;
+  padding: 0.25rem;
+
+  color: white;
+
+  background: rgba(0, 0, 0, 0.1);
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+input:focus,
+input:focus-visible,
+button:focus,
+button:focus-visible,
+button:active {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  outline: none;
+}
+
+input:disabled,
+button:disabled {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  cursor: not-allowed;
+}
+
+.surface {
+  padding: 1rem;
+  margin: auto;
+
+  border-radius: 5px;
+
+  background: #191919;
 }
 
 @media (prefers-color-scheme: dark) {
