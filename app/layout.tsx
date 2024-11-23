@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import type { NextFontWithVariable } from 'next/dist/compiled/@next/font'
 
 import localFont from 'next/font/local'
+import { Analytics } from '@vercel/analytics/react'
 
 import './globals.css'
 
@@ -30,6 +31,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+
+        <Analytics />
       </body>
     </html>
   )

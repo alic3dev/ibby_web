@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/ssh2": "^1.15.1",
     "@upstash/ratelimit": "^1.2.1",
+    "@vercel/analytics": "^1.4.1",
     "@vercel/kv": "^1.0.1",
     "@vercel/postgres-kysely": "^0.7.2",
     "dotenv": "^16.4.5",
