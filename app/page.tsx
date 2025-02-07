@@ -12,7 +12,7 @@ export default function Home(): React.ReactNode {
       </h2>
 
       <h3>
-        It's always the same, it's never enough
+        It&apos;s always the same, it&apos;s never enough
       </h3>
 
       <h4>
