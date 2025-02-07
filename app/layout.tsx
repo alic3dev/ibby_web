@@ -18,8 +18,8 @@ const geistMono: NextFontWithVariable = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Ibby Web',
-  description: 'A web application for Ibby data.',
+  title: '???? Web',
+  description: 'A web application for ???? data.',
 }
 
 export default function RootLayout({
@@ -37,3 +37,4 @@ export default function RootLayout({
     </html>
   )
 }
+
