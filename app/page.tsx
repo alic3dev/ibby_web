@@ -1,28 +1,23 @@
-import type React from 'react';
+import type { RequestCookie } from 'next/dist/compiled/@edge-runtime/cookies'
+
+import { cookies } from 'next/headers'
+
+import { Login } from './components/Login'
+import { Messages } from './components/Messages'
+import { Header } from './components/Header'
+import { Background } from './components/decorative/Background'
 
 export default function Home(): React.ReactNode {
+  const iaAuthKey: RequestCookie | undefined = cookies().get('IA-Auth-Key')
+  const isLoggedIn: boolean = !!iaAuthKey?.value
+
   return (
     <main>
-      <h1>
-        Waste of time, effort, and energy. &lt;/3
-      </h1>
+      <Background />
 
-      <h2>
-        Not worth the emotional hassle. Not worth the stress.
-      </h2>
+      <Header isLoggedIn={isLoggedIn} />
 
-      <h3>
-        It's always the same, it's never enough
-      </h3>
-
-      <h4>
-        Memories fade, from ash to ash to dust to dust
-      </h4>
-
-      <h5>
-        I hope it was worth it.
-      </h5>
+      {isLoggedIn ? <Messages /> : <Login />}
     </main>
   )
 }
-
