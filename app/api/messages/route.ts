@@ -3,7 +3,8 @@ import type { IAAuthCacheValue } from '@/utils/server/caches'
 import 'server-only'
 
 import type { ServerRuntime } from 'next'
-import type { NextRequest } from 'next/server'
+
+import type { ExtendedNextRequest } from '@/types/next'
 
 import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
@@ -27,7 +28,7 @@ const ratelimit: { [type: string]: Ratelimit } = {
 
 const totalMessages: number = 233976
 
-export const POST = async (req: NextRequest) => {
+export const POST = async (req: ExtendedNextRequest): Promise<NextResponse> => {
   const clientIp: string =
     req.ip ||
     req.headers.get('X-Real-IP') ||
@@ -38,7 +39,7 @@ export const POST = async (req: NextRequest) => {
     return NextResponse.json({}, { status: 429 })
   }
 
-  const iaAuthKey = cookies().get('IA-Auth-Key')
+  const iaAuthKey = (await cookies()).get('IA-Auth-Key')
 
   if (!iaAuthKey) {
     return NextResponse.json({}, { status: 401 })

@@ -7,8 +7,8 @@ import { Messages } from './components/Messages'
 import { Header } from './components/Header'
 import { Background } from './components/decorative/Background'
 
-export default function Home(): React.ReactNode {
-  const iaAuthKey: RequestCookie | undefined = cookies().get('IA-Auth-Key')
+export default async function Home(): Promise<React.ReactNode> {
+  const iaAuthKey: RequestCookie | undefined = (await cookies()).get('IA-Auth-Key')
   const isLoggedIn: boolean = !!iaAuthKey?.value
 
   return (
