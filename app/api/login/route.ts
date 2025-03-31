@@ -2,7 +2,8 @@ import 'server-only'
 
 import type { UUID } from 'crypto'
 import type { ServerRuntime } from 'next'
-import type { NextRequest } from 'next/server'
+
+import type { ExtendedNextRequest } from '@/types/next'
 
 import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
@@ -25,7 +26,7 @@ const ratelimit: { [type: string]: Ratelimit } = {
 
 const sevenDaysMs: number = 604800000
 
-export const POST = async (req: NextRequest) => {
+export const POST = async (req: ExtendedNextRequest): Promise<NextResponse> => {
   const clientIp: string =
     req.ip ||
     req.headers.get('X-Real-IP') ||
@@ -67,7 +68,7 @@ export const POST = async (req: NextRequest) => {
     return NextResponse.json({}, { status: 500 })
   }
 
-  cookies().set(constants.cookies.iaAuthKey, iaAuthKey, {
+  (await cookies()).set(constants.cookies.iaAuthKey, iaAuthKey, {
     expires: expiresAtMS,
     sameSite: 'strict',
     secure: true,
