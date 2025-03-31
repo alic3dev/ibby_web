@@ -36,6 +36,7 @@
     "eslint": "^9.23.0",
     "eslint-config-next": "15.2.4",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "node-loader": "^2.1.0",
     "ssh2": "^1.16.0",
     "turbo": "^2.4.4",
     "typescript": "^5.8.2"
