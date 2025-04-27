@@ -10,13 +10,13 @@
     "script": "ts-node ./scripts/run.ts"
   },
   "dependencies": {
-    "@types/ssh2": "^1.15.4",
+    "@types/ssh2": "^1.15.5",
     "@upstash/ratelimit": "^1.2.1",
     "@vercel/analytics": "^1.5.0",
     "@vercel/kv": "^1.0.1",
     "@vercel/postgres-kysely": "^0.7.2",
-    "dotenv": "^16.4.7",
-    "kysely": "^0.27.5",
+    "dotenv": "^16.5.0",
+    "kysely": "^0.27.6",
     "module-alias": "^2.2.3",
     "next": "15.2.4",
     "openpgp": "^6.1.0",
@@ -27,19 +27,19 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.23.0",
+    "@eslint/js": "^9.25.1",
     "@types/module-alias": "^2.0.4",
-    "@types/node": "^22.13.14",
-    "@types/react": "^19.0.12",
-    "@types/react-dom": "^19.0.4",
+    "@types/node": "^22.15.2",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
     "@types/seedrandom": "^3.0.8",
-    "eslint": "^9.23.0",
+    "eslint": "^9.25.1",
     "eslint-config-next": "15.2.4",
     "eslint-plugin-react-hooks": "^5.2.0",
     "node-loader": "^2.1.0",
     "ssh2": "^1.16.0",
-    "turbo": "^2.4.4",
-    "typescript": "^5.8.2"
+    "turbo": "^2.5.2",
+    "typescript": "^5.8.3"
   },
-  "packageManager": "pnpm@10.7.0+sha512.6b865ad4b62a1d9842b61d674a393903b871d9244954f652b8842c2b553c72176b278f64c463e52d40fff8aba385c235c8c9ecf5cc7de4fd78b8bb6d49633ab6"
+  "packageManager": "pnpm@10.9.0+sha512.0486e394640d3c1fb3c9d43d49cf92879ff74f8516959c235308f5a8f62e2e19528a65cdc2a3058f587cde71eba3d5b56327c8c33a97e4c4051ca48a10ca2d5f"
 }

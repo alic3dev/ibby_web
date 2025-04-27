@@ -3,4 +3,5 @@ onlyBuiltDependencies:
   - cpu-features
   - sharp
   - ssh2
+  - unrs-resolver
   - utf-8-validate
