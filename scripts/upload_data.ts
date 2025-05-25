@@ -1,6 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-
 import 'server-only'
 
 import { createKysely } from '@vercel/postgres-kysely'
@@ -33,7 +30,7 @@ interface Message {
   candidate_id: string
   raw_content: string
   create_time: string
-  tti_image_rel_path: object // No message have this but it exists as a prop
+  tti_image_rel_path: object // No message has this property but it exists as a property regardless
 }
 
 async function main(): Promise<void> {
